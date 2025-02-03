@@ -1,0 +1,64 @@
+AT&T Accunet Service Documentation
+--------------------------------
+
+1. Service Overview
+
+1.1 Introduction
+- Premium digital data service by AT&T
+- Based on X.25 protocol suite
+- Optimized for domestic US market
+- Launched in 1983
+
+1.2 Network Architecture
+- Packet-switched backbone
+- Distributed switching centers
+- Redundant routing capabilities
+- National coverage with international gateways
+
+2. Technical Specifications
+
+2.1 Timer Values
+- T1: 1.5 seconds (optimized for domestic links)
+- T2: 0.15 seconds
+- T3: 120 seconds
+- T4: 60 seconds (link reset)
+
+2.2 Frame Sizes
+- Maximum: 1024 bytes
+- Recommended: 512 bytes
+- Minimum: 32 bytes
+- Control frames: 16 bytes
+
+2.3 Throughput
+- Up to 56 kbps per virtual circuit
+- Multiple virtual circuits supported
+- Dynamic bandwidth allocation
+- Quality of Service (QoS) guarantees
+
+3. Service Features
+
+3.1 Reliability
+- 99.9% uptime guarantee
+- Automatic error recovery
+- Path redundancy
+- 24/7 network monitoring
+
+3.2 Security
+- Closed user groups
+- Access control lists
+- Physical security measures
+- Encryption options available
+
+4. Implementation Notes
+
+4.1 Performance Optimization
+- Reduced timer values for faster recovery
+- Optimized for continental US distances
+- Load balancing across multiple paths
+- Traffic prioritization capabilities
+
+4.2 Interoperability
+- Compatible with international X.25 networks
+- Gateway services to other protocols
+- Support for legacy equipment
+- Migration paths to newer technologies

@@ -1,0 +1,97 @@
+AT&T Accunet Service Comprehensive Documentation
+-------------------------------------------
+
+1. Service Overview and Architecture
+
+1.1 Introduction
+- Premium digital data service by AT&T
+- Based on X.25 protocol suite
+- Optimized for domestic US market
+- Launch: 1983
+- Target: Enterprise customers
+
+1.2 Network Architecture
+- Nationwide Infrastructure:
+  * 23 major switching centers
+  * Redundant backbone links
+  * Multiple access points
+  * Coast-to-coast coverage
+- Technical Specifications:
+  * Data rates: 56 Kbps to 1.544 Mbps
+  * End-to-end digital transmission
+  * Guaranteed quality of service
+  * 99.99% availability target
+
+2. Timer Configurations and Performance
+
+2.1 Timer Implementations
+- T1 Timer: 1.5 seconds
+  * Optimized for continental US distances
+  * Accounts for cross-country propagation
+  * Balances reliability and performance
+  * Adaptive to network conditions
+  
+- T2 Timer: 0.15 seconds
+  * Minimizes acknowledgment overhead
+  * Enables efficient frame bundling
+  * Reduces network congestion
+  * Optimized for domestic latencies
+
+- T3 Timer: 120 seconds
+  * Idle channel detection
+  * Resource management
+  * Connection state monitoring
+  * Reduced from X.25 standard for better responsiveness
+
+- T4 Timer: 60 seconds
+  * Link reset timer
+  * Faster than international standard
+  * Improves service recovery
+  * Maintains session integrity
+
+2.2 Performance Optimization
+- Timer Coordination:
+  * Synchronized across network
+  * Load-based adjustments
+  * Peak/off-peak variations
+  * Service class differentiation
+
+3. Service Features and Capabilities
+
+3.1 Reliability Features
+- Redundant Paths:
+  * Automatic rerouting
+  * Load balancing
+  * Failure detection
+  * Seamless switchover
+
+3.2 Error Management
+- Multi-level Recovery:
+  * Frame-level correction
+  * Path-level redundancy
+  * Session-level protection
+  * Application-level retry
+
+4. Implementation Guidelines
+
+4.1 Customer Premises Equipment
+- Supported Devices:
+  * AT&T certified DCE
+  * Third-party compatible DTE
+  * Protocol converters
+  * Network terminators
+
+4.2 Configuration Requirements
+- Network Parameters:
+  * Window sizes: 2-7 frames
+  * Packet sizes: 128-1024 bytes
+  * Address formats
+  * Protocol options
+
+5. Service Level Agreements
+
+5.1 Performance Guarantees
+- Availability: 99.99%
+- Mean Time to Repair: 4 hours
+- Packet Delivery: 99.995%
+- Round Trip Delay: <100ms

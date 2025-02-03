@@ -1,0 +1,100 @@
+NTT Network Protocols Documentation
+--------------------------------
+
+1. Protocol Implementation Overview
+
+1.1 X.25 Adaptation
+- Customized for Asian market
+- International gateway support
+- Multi-language character sets
+- Satellite link optimization
+
+2. Timer Configurations
+
+2.1 Timer Values and Rationale
+- T1 Timer: 5 seconds
+  * Optimized for satellite paths
+  * Accounts for geosynchronous delay
+  * Handles submarine cable latency
+  * Supports mixed-path routing
+  
+- T2 Timer: 0.25 seconds
+  * Balanced for varied distances
+  * Accommodates satellite delay
+  * Prevents premature retransmission
+  * Optimized for Asian network topology
+
+- T3 Timer: 240 seconds
+  * Extended for international links
+  * Maintains long-duration sessions
+  * Supports diverse path lengths
+  * Handles varying network conditions
+
+- T4 Timer: 90 seconds
+  * Link reset monitoring
+  * Adapted for satellite paths
+  * Accounts for path diversity
+  * Enhanced stability for long links
+
+2.2 International Considerations
+- Satellite Link Adaptation:
+  * Longer propagation delays
+  * Variable path characteristics
+  * Weather impact mitigation
+  * Redundancy requirements
+
+2.3 Timer Optimization
+- Dynamic Adjustments:
+  * Path-specific timing
+  * Load-based modification
+  * Time-of-day variation
+  * Geographic considerations
+
+3. Error Recovery Implementation
+
+3.1 Basic Recovery
+- Standard Mechanisms:
+  * Go-Back-N ARQ
+  * Selective repeat option
+  * Window-based flow control
+  * Acknowledgment strategies
+
+3.2 Enhanced Recovery
+- International Link Features:
+  * Extended retry limits
+  * Path quality monitoring
+  * Adaptive window sizing
+  * Congestion management
+
+4. Network Architecture
+
+4.1 Domestic Network
+- Infrastructure:
+  * High-speed backbone
+  * Metropolitan area networks
+  * Regional connections
+  * Access points
+
+4.2 International Gateway
+- Features:
+  * Protocol conversion
+  * Character set handling
+  * Rate adaptation
+  * Quality monitoring
+
+5. Service Specifications
+
+5.1 Performance Targets
+- Availability: 99.99%
+- Packet Loss: <0.01%
+- Round Trip Time:
+  * Domestic: <50ms
+  * International: <300ms
+  * Satellite: <800ms
+
+5.2 Quality Metrics
+- Monitoring Parameters:
+  * Link utilization
+  * Error rates
+  * Delay variation
+  * Throughput statistics
